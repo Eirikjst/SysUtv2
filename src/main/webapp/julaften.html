@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="ISO-8859-1">
+			<title>Julaften</title>
+			<style type="text/css">
+				.black { color: black;
+				}
+				.red { color: red;
+				}
+				.green { color: green;
+				}
+			</style>
+			<script type="text/javascript" src="Sjekkdatoer.js"></script>
+	</head>
+	<body>
+		<h1>Sjekk dagens dato</h1>
+		<button onclick="SjekkDato()">trykk her</button>
+		<p id="resultat1" class="black"></p>
+		
+		<h1>Sjekk valgfri dato</h1>
+		<form>
+		<input type="text" id="dd" />
+		<input type="text" id="mm" />
+		<input type="button" id="sjekk" value="Sjekk dato" onclick="SjekkValgfriDato()"/>
+		<p id="resultat2" class="black"></p>
+		</form>
+	</body>
+</html>

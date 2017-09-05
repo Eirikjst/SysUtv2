@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Bondesjakk</title>
+		<style type="text/css">
+			#bondesjakkbrett { width:300px;
+								height:300px;
+								border: 3px solid black;
+			}
+		.grey{ background-color: #808080;
+		}
+		.red{ background-color: #FF0000;
+		}
+		.green{ background-color: #008000;
+		}
+		</style>
+		<script type="text/javascript">
+			function byttfarge(x){
+				if (x.className == 'grey'){
+					x.className = 'red';
+				} else if (x.className == 'red'){
+					x.className = 'green';
+				} else {
+					x.className = 'grey';
+				}
+			}
+		</script>
+	</head>
+
+	<body>
+		<h1>Spill bondesjakk! </h1>
+		<p>
+		Her kan to personer spille bondesjakk. N&aring;r
+		f&oslash;rstemann (r&oslash;dt) velger rute, klikker han en gang, og
+		n&aring;r andremann (gr&oslash;nt) velger rute, dobbeltklikker han.
+		</p>
+
+		<table id="bondesjakkbrett">
+			<tr>
+				<td id="rute1" class="grey" onclick="byttfarge(this)"></td>
+				<td id="rute2" class="grey" onclick="byttfarge(this)"></td>
+				<td id="rute3" class="grey" onclick="byttfarge(this)"></td>
+			</tr>
+			<tr>
+				<td id="rute4" class="grey" onclick="byttfarge(this)"></td>
+				<td id="rute5" class="grey" onclick="byttfarge(this)"></td>
+				<td id="rute6" class="grey" onclick="byttfarge(this)"></td>
+			</tr>
+			<tr>
+				<td id="rute7" class="grey" onclick="byttfarge(this)"></td>
+				<td id="rute8" class="grey" onclick="byttfarge(this)"></td>
+				<td id="rute9" class="grey" onclick="byttfarge(this)"></td>
+			</tr>
+		</table>
+		
+		<p>Du m&aring; laste inn siden p&aring; nytt for &aring; starte et nytt spill.</p>
+	</body>
+</html>
